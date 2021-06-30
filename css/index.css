@@ -1,0 +1,291 @@
+h1 {
+    font-size:48px;
+    font-family:futura-pt,sans-serif;
+    font-weight:bold;
+}
+
+h2 {
+    font-size:28px;
+    font-family:futura-pt,sans-serif;
+    font-weight:bold;
+}
+
+h3 {
+    font-size:24px;
+    font-family:futura-pt,sans-serif;
+    font-weight:bold;
+}
+
+p {
+    font-size:16px;
+    font-family:futura-pt,sans-serif;
+    font-weight:medium;
+}
+
+.header {
+ background-image:linear-gradient(white,transparent);
+ width:100%;
+ display:grid;
+ height:100px;
+ justify-content:start;
+ align-content:start;
+ position:absolute;
+ grid-template-columns:75% 25%;
+ grid-template-areas: 
+ "logo menuItems";
+ padding:20px 0px 0px 20px;
+ z-index:1;
+}
+
+.logo {
+    background-image:url('../images/oliver\ tree\ design\ logo\ dark.png');
+    background-size:349px 48px;
+    background-repeat:no-repeat;
+}
+
+@media screen and (max-width:600px) {
+    .logo {
+        background-image:url('../images/oliver\ tree\ design\ small\ logo.png');
+        background-size: 50px 50px;
+        background-repeat:no-repeat;
+    }
+}
+
+.menuItems {
+    grid-area: menuItems;
+    display:grid;
+    grid-template-columns: 50px 50px 100px;
+    grid-template-areas: 
+    "instagram linkedin hamburger";
+    justify-content:end;
+    align-content:center;
+}
+
+.instagram {
+    grid-area: instagram;
+}
+
+.insta {
+    width:43px;
+    height:43px;
+}
+
+.linkedin {
+    grid-area: linkedin;
+}
+
+.linked {
+    width:43px;
+    height:43px;
+}
+
+.hamburger {
+    grid-area: hamburger;
+    padding:0px 20px 20px 20px;
+}
+
+.hamMenu {
+    width:34px;
+    height:27px;
+}
+
+.heroImage {
+    top:0;
+    left:0;
+    min-width:100%;
+    min-height:100%;
+}
+
+@media screen and (max-width:800px) {
+    .responsiveTitle {
+        font-size:36px;
+        top:20% !important;
+        line-height:35px !important;
+        left:80px !important;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .responsiveTitle {
+        font-size:28px;
+        top:20% !important;
+        line-height:30px !important;
+        left:50px !important;
+    }
+}
+
+.responsiveTitle {
+    position: absolute;
+    top:25%;
+    left:120px;
+    line-height:50px;
+    color:white;
+}
+
+.frontButtons {
+    position:absolute;
+    top:50%;
+    left:120px;
+}
+
+
+.buttonLarge {
+    background-color:black;
+    color:white;
+    width:266px;
+    height:66px;
+    font-size:28px;
+    padding:5px;
+    align-items:center;
+    border-radius:33px;
+    border:transparent;
+    font-family:futura-pt,sans-serif;
+    transition:background-color 1s ease-out;
+}
+
+@media screen and (max-width:800px) {
+    .buttonLarge {
+        width:163px;
+        height:49px;
+        font-size:20px;
+    }
+
+    .frontButtons {
+        top:40%;
+        left:80px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .frontButtons {
+        left:50px;
+        top:35%;
+    }
+}
+
+.buttonLarge:hover {
+    background-color:white;
+    color:black;
+    font-weight:bold;
+}
+
+#margin-left {
+    margin-left:20px;
+}
+
+#recentProjects {
+    background-color:black;
+    width:100%;
+    padding:10px 0 50px 0;
+    margin-top:-30px;
+    position:relative;
+}
+
+.projectsTitle {
+    color:white;
+    margin-left: 120px;
+}
+
+.row {
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    margin-right:120px;
+    margin-left:120px;
+}
+
+.card{
+    background-color:white;
+    position:relative;
+    flex: 1;
+    max-width:388px;
+    max-height:545px;
+    min-width:234px;
+    border-radius:10px;
+    box-shadow:0 0 5px rgba(0,0,0,0.2);
+    padding:10px;
+    margin:5px;
+}
+
+.cardImage {
+    width:100%;
+}
+
+.buttonSmall {
+    width:163px;
+    height:49px;
+    background-color:black;
+    color:white;
+    font-size:20px;
+    font-family:futura-pt,sans-serif;
+    border:transparent;
+    border-radius:33px;
+    padding:5px;
+    transition:background-color 1s ease-out;
+}
+
+.buttonSmall:hover {
+    background-color: #73ad43;
+    color:white;
+    font-weight:bold;
+}
+
+.flexContact {
+    display:flex;
+    flex-wrap:wrap;
+    margin-left:120px;
+    margin-right:120px;
+}
+
+#contactMeFront {
+    width:100%;
+    padding:100px 0 100px 0;
+}
+
+.logoGraphic {
+    max-width:150px;
+    max-height:150px;
+    margin-left:50px;
+    justify-content:end;
+}
+
+#footer {
+    background-color:black;
+    padding:10px 120px 10px 120px;
+    color:white;
+}
+
+.column3 {
+    display:flex;
+    flex-wrap:wrap;
+    align-items:flex-end;
+}
+
+@media screen and (max-width:800px) {
+    .column3 {
+        flex-direction:column;
+        align-items:flex-start;
+    }
+
+    .contactInfo {
+        text-align:start !important;
+    }
+}
+
+.siteMap {
+    font-family:futura-pt,sans-serif;
+    position:relative;
+    flex:1;
+    margin-left:-50px;
+}
+
+.copyright {
+    position:relative;
+    flex:1;
+}
+
+.contactInfo {
+    position:relative;
+    flex:1;
+    text-align:end;
+}
